@@ -1,0 +1,82 @@
+h1,p {
+  font-family: 'Comfortaa', cursive;
+  padding-left: 5px;
+}
+
+p {
+  display: inline-block;
+}
+
+#fplan {
+  padding: 5px;
+  width: 75%;
+  display: inline-block;
+  float: left;
+}
+
+#climate-button {
+  font-family: 'Comfortaa', cursive;
+  background-color: #FFFFFF;
+}
+
+#climate-button label {
+    float:left;
+    width:110px;
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:2px solid #000000;
+    overflow:auto;
+}
+
+#climate-button label span {
+    text-align:center;
+    font-size: 20px;
+    padding:2px 2px;
+    display:block;
+}
+
+#climate-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#climate-button input:checked + span {
+    background-color:#709c68;
+    color:#F7F7F7;
+}
+
+#climate-button .on {
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+#climate-button .off {
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+.info {
+   margin: 0px;
+   display: inline-block;
+ }
+
+ .info a{
+   font-size: 22px;
+   text-decoration: none;
+   font-family: 'Comfortaa', cursive;
+   margin: 0 10px;
+   display: inline-block;
+ }
+
+#info-box1 {
+  height: 400px;
+  width: 300px;
+  padding-right: 29px;
+  background-color: #FFFFFF;
+  border: solid 4px;
+  border-radius: 7px;
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+}
