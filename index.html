@@ -36,21 +36,38 @@
         <p></p>
         <div id="info-box1">
           <p>Sensor Information:</p>
-          <p> CO2: _______
+          <ul>
+          <li>CO2: _______
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the CO2 levels read by this sensor in parts per million."></span></a>
-          </div></p>
-          <p>Temperature: _______
+          </div></li>
+          <li>Temperature: _______
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the temperature levels read by this sensor in degrees Celcius."></span></a>
-          </div></p>
-          <p>Humidity: _______
+          </div></li>
+          <li>Humidity: _______
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the humidity levels read by this sensor in grams per Kg of air."></span></a>
-          </div></p>
+          </div></li>
+        </ul>
+          <p>Click the button below to see an interpretation of your readings based on sensor information, user feedback,
+            and outdoor weather conditions.</p>
+          <button id="recs">See Recommendations</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>You should replace the window sealant to better insulate the room, because blah blah blah</p>
+            </div>
+          </div>
+        </div>
+        <div id="info-box2">
+          <p>User Feedback</p>
+          <ul>
+            <li> [user] feels <mark>cold</mark> </li>
+          </ul>
         </div>
     </main>
 	<script src="index.js"></script>

@@ -7,6 +7,15 @@ p {
   display: inline-block;
 }
 
+ul {
+  font-family: 'Comfortaa', cursive;
+}
+
+mark {
+  background-color: #000000;
+  color: black;
+}
+
 #fplan {
   padding: 5px;
   width: 75%;
@@ -31,7 +40,7 @@ p {
 
 #climate-button label span {
     text-align:center;
-    font-size: 20px;
+    font-size: 14px;
     padding:2px 2px;
     display:block;
 }
@@ -73,10 +82,89 @@ p {
   height: 400px;
   width: 300px;
   padding-right: 29px;
+  margin-top: 5px;
   background-color: #FFFFFF;
-  border: solid 4px;
+  border: solid 3px;
   border-radius: 7px;
   display: inline-block;
   float: right;
   margin-right: 50px;
+}
+
+#info-box2 {
+  height: 100px;
+  width: 300px;
+  padding-right: 29px;
+  margin-top: 5px;
+  background-color: #FFFFFF;
+  border: solid 3px;
+  border-radius: 7px;
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 50px;
+  top: 50px;
+  width: 75%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+#recs {
+  font-family: 'Comfortaa', cursive;
+  background-color:#709c68;
+  color: #FFFFFF;
+  border:2px solid #000000;
+  padding-left: 2px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #000000;
+  width: 80%;
+  font-family: 'Comfortaa', cursive;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
