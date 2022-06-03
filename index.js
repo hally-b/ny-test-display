@@ -14,4 +14,42 @@ window.onclick = function(event) {
   }
 }
 
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+var sheet = document.createElement('style'),
+  $rangeInput = $('.range input'),
+  prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+
+document.body.appendChild(sheet);
+
+var getTrackStyle = function (el) {
+  var curVal = el.value,
+      val = (curVal - 1) * 8.333333333,
+      style = '';
+
+  // Set active label
+  $('.range-labels li').removeClass('active selected');
+
+  var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
+
+  curLabel.addClass('active selected');
+  curLabel.prevAll().addClass('selected');
+
+  // Change background gradient
+  for (var i = 0; i < prefs.length; i++) {
+    style += '.range {background: linear-gradient(to right, #75cf67 0%, #75cf67 ' + val + '%, #fff ' + val + '%, #fff 100%)}';
+    style += '.range input::-' + prefs[i] + '{background: linear-gradient(to right, #37adbf 0%, #37adbf ' + val + '%, #75cf67 ' + val + '%, #75cf67 100%)}';
+  }
+
+  return style;
+}
+
+$rangeInput.on('input', function () {
+  sheet.textContent = getTrackStyle(this);
+});
+
+// Change input value on label click
+$('.range-labels li').on('click', function () {
+  var index = $(this).index();
+
+  $rangeInput.val(index + 1).trigger('input');
+
+});

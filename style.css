@@ -79,7 +79,7 @@ mark {
  }
 
 #info-box1 {
-  height: 400px;
+  height: 350px;
   width: 316px;
   padding-right: 29px;
   margin-top: 5px;
@@ -167,4 +167,122 @@ mark {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.weatherwidget-io {
+  width: 316px;
+  margin-top: 40px;
+  border-radius: 3px;
+}
+
+/*slider bar stuff*/
+
+.range {
+  margin-top: 400px;
+  margin-right: 1090px;
+  position: relative;
+  width: 1090px;
+  height: 5px;
+  float: bottom:
+}
+
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+.range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background: #709c68;
+  cursor: pointer;
+  border: 0 !important;
+}
+.range input::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background: #709c68;
+  cursor: pointer;
+  border: 0 !important;
+}
+.range input::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background: #709c68;
+  cursor: pointer;
+  border: 0 !important;
+}
+.range input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #75cf67;
+}
+.range input::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #75cf67;
+}
+.range input::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #75cf67;
+}
+.range input:focus {
+  background: none;
+  outline: none;
+}
+.range input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none;
+}
+.range-labels li {
+  position: relative;
+  float: left;
+  width: 90.25px;
+  text-align: center;
+  color: #709c68;
+  font-size: 14px;
+  cursor: pointer;
+}
+.range-labels li::before {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  content: "";
+  margin: 0 auto;
+  width: 9px;
+  height: 9px;
+  background: #709c68;
+  border-radius: 50%;
+}
+.range-labels .active {
+  color: #709c68;
+}
+.range-labels .selected::before {
+  background: #709c68;
+}
+.range-labels .active.selected::before {
+  display: none;
 }
