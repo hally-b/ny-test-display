@@ -14,42 +14,39 @@ window.onclick = function(event) {
   }
 }
 
-var sheet = document.createElement('style'),
-  $rangeInput = $('.range input'),
-  prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+$('#slider-range').slider({
+    range: 'min',
+    min: 0,
+    max: 1440,
+    step: 15,
+    value: 720,
+    animate: 'fast',
+    slide: function (e, ui) {
 
-document.body.appendChild(sheet);
+        var hours1 = Math.floor(ui.value / 60);
+        var minutes1 = ui.value - (hours1 * 60);
 
-var getTrackStyle = function (el) {
-  var curVal = el.value,
-      val = (curVal - 1) * 8.333333333,
-      style = '';
+        if (hours1.length == 1) hours1 = '0' + hours1;
+        if (minutes1.length == 1) minutes1 = '0' + minutes1;
+        if (minutes1 == 0) minutes1 = '00';
+        if (hours1 >= 12) {
+            if (hours1 == 12) {
+                hours1 = hours1;
+                minutes1 = minutes1 + ' PM';
+            } else {
+                hours1 = hours1 - 12;
+                minutes1 = minutes1 + ' PM';
+            }
+        } else {
+            hours1 = hours1;
+            minutes1 = minutes1 + ' AM';
+        }
+        if (hours1 == 0) {
+            hours1 = 12;
+            minutes1 = minutes1;
+        }
 
-  // Set active label
-  $('.range-labels li').removeClass('active selected');
-
-  var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
-
-  curLabel.addClass('active selected');
-  curLabel.prevAll().addClass('selected');
-
-  // Change background gradient
-  for (var i = 0; i < prefs.length; i++) {
-    style += '.range {background: linear-gradient(to right, #75cf67 0%, #75cf67 ' + val + '%, #fff ' + val + '%, #fff 100%)}';
-    style += '.range input::-' + prefs[i] + '{background: linear-gradient(to right, #37adbf 0%, #37adbf ' + val + '%, #75cf67 ' + val + '%, #75cf67 100%)}';
-  }
-
-  return style;
-}
-
-$rangeInput.on('input', function () {
-  sheet.textContent = getTrackStyle(this);
-});
-
-// Change input value on label click
-$('.range-labels li').on('click', function () {
-  var index = $(this).index();
-
-  $rangeInput.val(index + 1).trigger('input');
+        $('.slider-time').html(hours1 + ':' + minutes1);
+    }
 
 });
