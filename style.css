@@ -12,13 +12,13 @@ ul {
 }
 
 mark {
-  background-color: #000000;
+  background-color: #95dcf5;
   color: black;
 }
 
 #fplan {
   padding: 5px;
-  width: 75%;
+  width: 70%;
   display: inline-block;
   float: left;
 }
@@ -80,7 +80,7 @@ mark {
 
 #info-box1 {
   height: 400px;
-  width: 300px;
+  width: 316px;
   padding-right: 29px;
   margin-top: 5px;
   background-color: #FFFFFF;
@@ -88,12 +88,12 @@ mark {
   border-radius: 7px;
   display: inline-block;
   float: right;
-  margin-right: 50px;
+  margin-right: 105px;
 }
 
 #info-box2 {
   height: 100px;
-  width: 300px;
+  width: 316px;
   padding-right: 29px;
   margin-top: 5px;
   background-color: #FFFFFF;
@@ -101,7 +101,7 @@ mark {
   border-radius: 7px;
   display: inline-block;
   float: right;
-  margin-right: 50px;
+  margin-right: 105px;
 }
 
 .modal {

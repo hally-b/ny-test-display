@@ -28,8 +28,8 @@
     <main>
         <h1>Climate Interface</h1>
         <img id="fplan" src="https://www.hauseit.com/wp-content/uploads/2019/08/Sample-Hauseit-Custom-2D-Floorplan-1.jpg" alt="floorplan">
+        <p>Select Floorplan Climate View:</p>
         <div id="climate-button">
-          Select Floorplan Climate View:
           <label class="on"><input type="radio" name="toggle"><span>Show Overlay</span></label>
           <label class="off"><input type="radio" name="toggle"><span>No Overlay</span></label>
         </div>
@@ -66,8 +66,19 @@
         <div id="info-box2">
           <p>User Feedback</p>
           <ul>
-            <li> [user] feels <mark>cold</mark> </li>
+            <li> [user] feels <mark>cold</mark>.</li>
           </ul>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div>
+          <a class="weatherwidget-io" href="https://forecast7.com/en/42d39n71d10/somerville/" data-label_1="SOMERVILLE" data-label_2="WEATHER" data-theme="dark" >SOMERVILLE WEATHER</a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
         </div>
     </main>
 	<script src="index.js"></script>
