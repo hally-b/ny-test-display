@@ -97,7 +97,7 @@
       var timepicker = new dhx.Timepicker("timepicker_container", {
         css: "dhx_timepicker--bordered bg-grey"
       });
-      timepicker.setValue([6,20,"AM"]);
+      timepicker.setValue([12,00,"PM"]);
 
       //for popup on senosr
       function testFun() {
@@ -119,12 +119,15 @@
         return parseJSON(data);
       })
       .catch(function (err) {
+        console.log(err);
         alert("there was an error fetching json data");
       });
 
       function parseJSON(data) {
         var timeslot = timepicker.getValue();
         console.log(timeslot);
+        //var ts = data.eb04cfa99e97dcd162qfc0_co2_value.MuoKPcei1U6DEkmuBhX.timeStamp;
+        console.log(data.eb04cfa99e97dcd162qfc0_co2_value.MuoKPcei1U6DEkmuBhX.timeStamp);
         // var div = document.createElement('div');
         // var newElem = "";
         // for(var j = 0; j < data.bands.length; j++) {
