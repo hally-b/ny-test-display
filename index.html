@@ -53,17 +53,17 @@
         <div id="info-box1">
           <p>Sensor Information:</p>
           <ul>
-          <li>CO2: _______
+          <li id="co2">CO2: _______
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the CO2 levels read by this sensor in parts per million."></span></a>
           </div></li>
-          <li>Temperature: _______
+          <li id="temp">Temperature: _______
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the temperature levels read by this sensor in degrees Celcius."></span></a>
           </div></li>
-          <li>Humidity: _______
+          <li id="hum">Humidity: _______
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the humidity levels read by this sensor in grams per Kg of air."></span></a>
@@ -103,6 +103,40 @@
       function testFun() {
         alert("sensor 1 click");
         console.log("clicked");
+      }
+
+      //for json parse
+      var dat;
+      var str;
+      fetch('test-data.json')
+      .then(function(get) {
+        return get.json();
+      })
+      .then(function(data) {
+        dat = data;
+        str = JSON.stringify(data);
+        //document.getElementById('serial').innerHTML = str;
+        return parseJSON(data);
+      })
+      .catch(function (err) {
+        alert("there was an error fetching json data");
+      });
+
+      function parseJSON(data) {
+        var timeslot = timepicker.getValue();
+        console.log(timeslot);
+        // var div = document.createElement('div');
+        // var newElem = "";
+        // for(var j = 0; j < data.bands.length; j++) {
+        //   for(var i = 0; i < data.bands[j].setlist.length; i++) {
+        //     newElem += '<b>' + data.bands[j].setlist[i].title+ '</b>' + '<br>' +
+        //     "Artist: " + data.bands[j].name + '<br>' +
+        //     "Genre: " + data.bands[j].genre + '<br>' +
+        //     "Released " + data.bands[j].setlist[i].year + '<br>' + '<br>';
+        //   }
+        // }
+        // div.innerHTML = newElem;
+        // b.appendChild(div);
       }
     </script>
 
