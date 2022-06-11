@@ -34,7 +34,16 @@
   <body>
     <main>
         <h1>Climate Interface</h1>
-        <img id="fplan" src="/images/fplan-actual.jpg" alt="floorplan">
+        <img id="fplan" src="/images/fplan-actual.jpg" alt="floorplan" usemap="#flrplan">
+        <map name="flrplan">
+          <area shape="circle" coords="172,249,31" alt="sense1" onclick="testFun()">
+          <area shape="circle" coords="215,357,31" alt="sense2" onclick="testFun()">
+          <area shape="circle" coords="238,435,31" alt="sense3" onclick="testFun()">
+          <area shape="circle" coords="144,511,31" alt="sense4" onclick="testFun()">
+          <area shape="circle" coords="351,249,31" alt="sense5" onclick="testFun()">
+          <area shape="circle" coords="784,347,31" alt="sense6" onclick="testFun()">
+          <area shape="circle" coords="742,425,31" alt="sense7" onclick="testFun()">
+        </map>
         <p>Select Floorplan Climate View:</p>
         <div id="climate-button">
           <label class="on"><input type="radio" name="toggle"><span>Show Overlay</span></label>
@@ -89,6 +98,12 @@
         css: "dhx_timepicker--bordered bg-grey"
       });
       timepicker.setValue([6,20,"AM"]);
+
+      //for popup on senosr
+      function testFun() {
+        alert("sensor 1 click");
+        console.log("clicked");
+      }
     </script>
 
     <script src="index.js"></script>
