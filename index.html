@@ -93,6 +93,9 @@
     </main>
 
     <script>
+      //for demo purposes, we will use a constant date (one day) 02-01-22
+      const datestr = '2022-02-01';
+      const [year,month,day] = datestr.split('-');
       //for slider
       var timepicker = new dhx.Timepicker("timepicker_container", {
         css: "dhx_timepicker--bordered bg-grey"
@@ -123,11 +126,35 @@
         alert("there was an error fetching json data");
       });
 
+      //get timstamp format from the time picker
+      function convertTimestamp(time) {
+        var hrmin = time.split(":");
+        var currts = new Date(+year, month - 1, +day, +hrmin[0], +hrmin[1], +00);
+        return currts.getTime();
+      }
+
+      //remove the seconds and milliseconds from json timestamp
+      function cleanTimestamp(jsontime) {
+        var tststr = jsontime.toString();
+        var tsclean = tststr.replace(tststr.substring(tststr.length - 5), '00000');
+        tsclean = parseInt(tsclean);
+        return tsclean;
+      }
+
       function parseJSON(data) {
         var timeslot = timepicker.getValue();
-        console.log(timeslot);
-        //var ts = data.eb04cfa99e97dcd162qfc0_co2_value.MuoKPcei1U6DEkmuBhX.timeStamp;
-        console.log(data.eb04cfa99e97dcd162qfc0_co2_value.MuoKPcei1U6DEkmuBhX.timeStamp);
+        console.log(convertTimestamp(timeslot));
+        var test = data.eb04cfa99e97dcd162qfc0_co2_value.MuoKPcei1U6DEkmuBhX.timeStamp;
+        console.log(cleanTimestamp(test));
+        function search(data, timeslot) {
+          var found;
+          found = $.map(data, function(entry) {
+            //var match = entry.name.toUpperCase().indexOf(name) !== -1;
+            return match ? entry : null;
+          });
+          return found;
+        }
+        console.log(search(data,timeslot));
         // var div = document.createElement('div');
         // var newElem = "";
         // for(var j = 0; j < data.bands.length; j++) {
