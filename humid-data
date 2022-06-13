@@ -1,0 +1,989 @@
+{
+"humidsensor1" : {
+  "MuoKRkbCY37Hulls9Zd" : {
+    "timeStamp" : 1643703031833,
+    "value" : "40.5"
+  },
+  "MuoMk2A6_TZXNqV5qCM" : {
+    "timeStamp" : 1643703651692,
+    "value" : "40.5"
+  },
+  "MuoP1KgWX5ciRSQWGm6" : {
+    "timeStamp" : 1643704247284,
+    "value" : "40.5"
+  },
+  "MuoTdKPRDTaixCfQXCH" : {
+    "timeStamp" : 1643705455491,
+    "value" : "40.5"
+  },
+  "MuoVtxbtTKAzQyxpX6" : {
+    "timeStamp" : 1643706064893,
+    "value" : "40.5"
+  },
+  "MuoYFmjuRX_xkspEGPq" : {
+    "timeStamp" : 1643706675812,
+    "value" : "40.5"
+  },
+  "Muo_S6zrF2McrIcRUT" : {
+    "timeStamp" : 1643707227348,
+    "value" : "40.5"
+  },
+  "MuoblnbM39o6ozsZr9S" : {
+    "timeStamp" : 1643707840399,
+    "value" : "40.5"
+  },
+  "MuoeC5fAgwJenwnd1Ts" : {
+    "timeStamp" : 1643708470934,
+    "value" : "40.5"
+  },
+  "MuogIWnoOQjRJ73MIdd" : {
+    "timeStamp" : 1643709021289,
+    "value" : "40.5"
+  },
+  "Muoig0B9mj_XraZULVB" : {
+    "timeStamp" : 1643709667095,
+    "value" : "40.5"
+  },
+  "Muokwt1sG320PfKql57" : {
+    "timeStamp" : 1643710245817,
+    "value" : "40.5"
+  },
+  "MuonGK2xy0Kv0uJzbuN" : {
+    "timeStamp" : 1643710866800,
+    "value" : "40.5"
+  },
+  "MuopbK1NSJF9F9FEGMc" : {
+    "timeStamp" : 1643711484596,
+    "value" : "40.5"
+  },
+  "MuorpZADPKMLoUkW0qG" : {
+    "timeStamp" : 1643712056002,
+    "value" : "40.5"
+  },
+  "Muou7Vr9CPLAPmIalP" : {
+    "timeStamp" : 1643712672591,
+    "value" : "40.5"
+  },
+  "MuowVyfNA6rFHTmU21" : {
+    "timeStamp" : 1643713282513,
+    "value" : "40.5"
+  },
+  "MuoyeiIQZe3umZN0T9O" : {
+    "timeStamp" : 1643713839284,
+    "value" : "40.5"
+  },
+  "Mup0tDnArhzhIUZYpo" : {
+    "timeStamp" : 1643714459397,
+    "value" : "40.5"
+  },
+  "Mup2Ii6ZkIR6xJFRA_l" : {
+    "timeStamp" : 1643715077089,
+    "value" : "40.5"
+  },
+  "Mup4b1EUezmOWgE4Zk" : {
+    "timeStamp" : 1643715661303,
+    "value" : "40.5"
+  },
+  "Mup6tWEq19_ulZsgebk" : {
+    "timeStamp" : 1643716280999,
+    "value" : "40.5"
+  },
+  "Mup96HhmhyQhLJDr6oT" : {
+    "timeStamp" : 1643716843586,
+    "value" : "40.5"
+  },
+  "MupBTyT7CSWoX1BYPxq" : {
+    "timeStamp" : 1643717477323,
+    "value" : "40.5"
+  },
+  "MupDjnEw5gO9RigsGDI" : {
+    "timeStamp" : 1643718065396,
+    "value" : "40.5"
+  },
+  "MupFyIZxuQWrsYDNf5A" : {
+    "timeStamp" : 1643718638084,
+    "value" : "40.5"
+  },
+  "MupIOlZmQkvW5sfXr" : {
+    "timeStamp" : 1643719292816,
+    "value" : "40.5"
+  },
+  "MupKba7nS5WiLV7U06F" : {
+    "timeStamp" : 1643719875103,
+    "value" : "40.5"
+  },
+  "MupMtJejEBPO9jh5ra" : {
+    "timeStamp" : 1643720484206,
+    "value" : "40.5"
+  },
+  "MupPCsarui2_Mh8JfrA" : {
+    "timeStamp" : 1643721068811,
+    "value" : "40.5"
+  },
+  "MupRSMPxpXjkjACOgPD" : {
+    "timeStamp" : 1643721658297,
+    "value" : "40.5"
+  },
+  "MupTn25_E0JXqkl4YsL" : {
+    "timeStamp" : 1643722290732,
+    "value" : "40.5"
+  },
+  "MupW5ouAW1vGIk50a2R" : {
+    "timeStamp" : 1643722866420,
+    "value" : "40.5"
+  },
+  "MupYKdX2_MAXDZmpxhN" : {
+    "timeStamp" : 1643723458214,
+    "value" : "40.5"
+  },
+  "Mup_dV1a5rZ1wLqxmET" : {
+    "timeStamp" : 1643724098004,
+    "value" : "40.5"
+  },
+  "MupbuAPLw5kjI7dIg7o" : {
+    "timeStamp" : 1643724650634,
+    "value" : "40.5"
+  },
+  "MupeFRbmCVlmfkNlRkH" : {
+    "timeStamp" : 1643725286802,
+    "value" : "40.5"
+  },
+  "MupgWMaizZ4zeQ4qmyI" : {
+    "timeStamp" : 1643725870497,
+    "value" : "40.5"
+  },
+  "Mupioe9pCvVsta79H8a" : {
+    "timeStamp" : 1643726461220,
+    "value" : "40.5"
+  },
+  "Mupl6CpKLW8hidQ3QY" : {
+    "timeStamp" : 1643727068208,
+    "value" : "40.5"
+  },
+  "MupnNE57GBQVLEw8Pun" : {
+    "timeStamp" : 1643727672399,
+    "value" : "40.5"
+  },
+  "Muppfi9VhCviQJED4WV" : {
+    "timeStamp" : 1643728273403,
+    "value" : "40.5"
+  },
+  "MuprygQHGfpLD5BrM3C" : {
+    "timeStamp" : 1643728879902,
+    "value" : "40.5"
+  },
+  "MupuHFAVKmVndZ_B2y7" : {
+    "timeStamp" : 1643729480312,
+    "value" : "40.5"
+  },
+  "MupwdRjaoQjxRQV4rr_" : {
+    "timeStamp" : 1643730114812,
+    "value" : "40.5"
+  },
+  "MupyrGHAlph5kuss0U" : {
+    "timeStamp" : 1643730676399,
+    "value" : "40.5"
+  },
+  "Muq08nS37CIkDmTIm" : {
+    "timeStamp" : 1643731301104,
+    "value" : "40.5"
+  },
+  "Muq158uiGUFIfS21ln" : {
+    "timeStamp" : 1643731532128,
+    "value" : "40.5"
+  },
+  "Muq3LfuuerbTpGmeKq" : {
+    "timeStamp" : 1643732118515,
+    "value" : "40.5"
+  },
+  "Muq5cwrFxzBXfXF8E3z" : {
+    "timeStamp" : 1643732730006,
+    "value" : "40.5"
+  },
+  "Muq7vtXHRtQR824uxM0" : {
+    "timeStamp" : 1643733305701,
+    "value" : "40.5"
+  },
+  "MuqAHs2SjgZSU9iXIQ" : {
+    "timeStamp" : 1643733943292,
+    "value" : "40.5"
+  },
+  "MuqCYoagPaNaSeAUg_O" : {
+    "timeStamp" : 1643734558393,
+    "value" : "40.5"
+  },
+  "MuqEjvoi336P2_W_PUA" : {
+    "timeStamp" : 1643735097601,
+    "value" : "40.5"
+  },
+  "MuqH2vgr_RGdQ02NGJy" : {
+    "timeStamp" : 1643735714298,
+    "value" : "40.5"
+  },
+  "MuqJNDtLgv_XnSdg6Z" : {
+    "timeStamp" : 1643736313701,
+    "value" : "40.5"
+  },
+  "MuqLd6ibp9Io046NbpQ" : {
+    "timeStamp" : 1643736906614,
+    "value" : "40.5"
+  },
+  "MuqNvomzNlBRBZhvA" : {
+    "timeStamp" : 1643737523703,
+    "value" : "40.5"
+  },
+  "MuqQEjyyuX20sO7puG9" : {
+    "timeStamp" : 1643738127109,
+    "value" : "40.5"
+  },
+  "MuqSV2kMnT69CkzzIOt" : {
+    "timeStamp" : 1643738720794,
+    "value" : "40.5"
+  },
+  "MuqUlJd3saDTlrPc6cA" : {
+    "timeStamp" : 1643739327985,
+    "value" : "40.5"
+  },
+  "MuqX3HuTt_K9LdR300R" : {
+    "timeStamp" : 1643739910300,
+    "value" : "40.5"
+  },
+  "MuqZLR1MXqA5O5uP4x" : {
+    "timeStamp" : 1643740504913,
+    "value" : "40.5"
+  },
+  "Muqa_fDgWWUfF78Wh3" : {
+    "timeStamp" : 1643741079785,
+    "value" : "40.5"
+  },
+  "MuqfDxk4kytoGv5lEA3" : {
+    "timeStamp" : 1643742306121,
+    "value" : "40.5"
+  },
+  "MuqhSQFFfOYKW0iJiF" : {
+    "timeStamp" : 1643742891185,
+    "value" : "40.5"
+  },
+  "MuqjrgNg4Wg5exU32PW" : {
+    "timeStamp" : 1643743510829,
+    "value" : "40.5"
+  },
+  "Muqm4ftNd8MjXHLjvoJ" : {
+    "timeStamp" : 1643744100793,
+    "value" : "40.5"
+  },
+  "MuqoP5Clannt0Ws3t4" : {
+    "timeStamp" : 1643744718719,
+    "value" : "40.5"
+  },
+  "Muqqk5LiomumjRlUQVE" : {
+    "timeStamp" : 1643745332477,
+    "value" : "40.5"
+  },
+  "MuqsyKSTMeMMDxIslci" : {
+    "timeStamp" : 1643745905834,
+    "value" : "40.5"
+  },
+  "MuqvGH90wZXcgwmUNw5" : {
+    "timeStamp" : 1643746516305,
+    "value" : "30.5"
+  },
+  "Muqx_DuERlm2LsSCG4M" : {
+    "timeStamp" : 1643747105439,
+    "value" : "31.2"
+  },
+  "Muqzod2wnx9QKmDRsZp" : {
+    "timeStamp" : 1643747696923,
+    "value" : "30.4"
+  },
+  "Mur133hsBONSEqBnntl" : {
+    "timeStamp" : 1643748283297,
+    "value" : "30.2"
+  },
+  "Mur3PD6Z2tHMPEIJQC" : {
+    "timeStamp" : 1643748920993,
+    "value" : "29.4"
+  },
+  "Mur5jHhNRXB_LC0EIJs" : {
+    "timeStamp" : 1643749514228,
+    "value" : "29.2"
+  },
+  "Mur7vdW2zQHHeAXrA" : {
+    "timeStamp" : 1643750085688,
+    "value" : "29.4"
+  },
+  "MurAEpv1ofwAqrrkp1R" : {
+    "timeStamp" : 1643750711516,
+    "value" : "29.3"
+  },
+  "MurCbZqPdxESoXjrys3" : {
+    "timeStamp" : 1643751335806,
+    "value" : "28.6"
+  },
+  "MurEnMlVhDkhFKrjQJR" : {
+    "timeStamp" : 1643751890686,
+    "value" : "27.9"
+  },
+  "MurH80ovQ8qAD6pIPdL" : {
+    "timeStamp" : 1643752514015,
+    "value" : "27.8"
+  },
+  "MurJQwx92d0d_meh21" : {
+    "timeStamp" : 1643753105921,
+    "value" : "28"
+  },
+  "MurLie16geOCEkMJljA" : {
+    "timeStamp" : 1643753705904,
+    "value" : "28.1"
+  },
+  "MurO04u0u222EpG9k5Q" : {
+    "timeStamp" : 1643754308413,
+    "value" : "28"
+  },
+  "MurQHoSb8nJBMQWIKSy" : {
+    "timeStamp" : 1643754892942,
+    "value" : "28.1"
+  },
+  "MurS_WXTDET5XzWL_1" : {
+    "timeStamp" : 1643755510405,
+    "value" : "27.9"
+  },
+  "MurUsb_35YDbRO4Fgnu" : {
+    "timeStamp" : 1643756122496,
+    "value" : "27.2"
+  },
+  "MurX7qphZ0I0XYBVPqb" : {
+    "timeStamp" : 1643756700504,
+    "value" : "27.8"
+  },
+  "MurZPEWi6TrUWqge6Pp" : {
+    "timeStamp" : 1643757290600,
+    "value" : "27.1"
+  },
+  "MurakNstxDhNeXBk8zC" : {
+    "timeStamp" : 1643757918218,
+    "value" : "27"
+  },
+  "Murd0k0T0qJzHA7aVJh" : {
+    "timeStamp" : 1643758505798,
+    "value" : "26.9"
+  },
+  "MurfEZ_0DXxmY4NS9y" : {
+    "timeStamp" : 1643759091387,
+    "value" : "27"
+  },
+  "MurhbK6ibS32jdkzaW3" : {
+    "timeStamp" : 1643759696323,
+    "value" : "27.2"
+  },
+  "MurjsxPEgvGXSvs9fcH" : {
+    "timeStamp" : 1643760298317,
+    "value" : "27.5"
+  },
+  "MurmAj95zX8nmjFw9Ok" : {
+    "timeStamp" : 1643760898216,
+    "value" : "27.5"
+  },
+  "MuroUSofucUf6JdmYtm" : {
+    "timeStamp" : 1643761498921,
+    "value" : "27.6"
+  },
+  "MurqmnVBxc9faagQgtS" : {
+    "timeStamp" : 1643762127018,
+    "value" : "29"
+  },
+  "Murt4qSYXSK2hItzpAt" : {
+    "timeStamp" : 1643762728124,
+    "value" : "31.6"
+  },
+  "MurvOSKQRmpMU_Pyf3o" : {
+    "timeStamp" : 1643763341297,
+    "value" : "34.1"
+  },
+  "MurxfZuZbHhBfVveUyq" : {
+    "timeStamp" : 1643763918557,
+    "value" : "33.8"
+  },
+  "MurzrBost3alSPQCvJi" : {
+    "timeStamp" : 1643764480785,
+    "value" : "33"
+  },
+  "Mus1EIFrWR1_7Jj6Lk1" : {
+    "timeStamp" : 1643765125032,
+    "value" : "31.8"
+  },
+  "Mus3TMSL5KKVhxTYSl" : {
+    "timeStamp" : 1643765701488,
+    "value" : "31.4"
+  },
+  "Mus5mVicSDO7W6bgllc" : {
+    "timeStamp" : 1643766303515,
+    "value" : "31.2"
+  },
+  "Mus82dlnXwhtR2yLuOk" : {
+    "timeStamp" : 1643766910306,
+    "value" : "31.1"
+  },
+  "MusAPdqLSq5jSMbtPun" : {
+    "timeStamp" : 1643767526507,
+    "value" : "30.7"
+  },
+  "MusCZyxelBFx5w5vVGs" : {
+    "timeStamp" : 1643768089586,
+    "value" : "30.4"
+  },
+  "MusEwa4ueIEkVyM1DID" : {
+    "timeStamp" : 1643768719304,
+    "value" : "30.3"
+  },
+  "MusHDLCwpSI1l99VsgX" : {
+    "timeStamp" : 1643769303813,
+    "value" : "29.9"
+  },
+  "MusJW90g8pHk0SNzBB" : {
+    "timeStamp" : 1643769894059,
+    "value" : "30.2"
+  },
+  "MusLo3czEZGTEWlx_h" : {
+    "timeStamp" : 1643770513706,
+    "value" : "30.2"
+  },
+  "MusO3zeWaTEYoAS1RCP" : {
+    "timeStamp" : 1643771099527,
+    "value" : "29.9"
+  },
+  "MusQMmywnX6Xp5QwDn" : {
+    "timeStamp" : 1643771713922,
+    "value" : "29.8"
+  },
+  "MusShydyh3z5_Fql0d" : {
+    "timeStamp" : 1643772325497,
+    "value" : "29.8"
+  },
+  "MusUxadwIDtHJHTtTE" : {
+    "timeStamp" : 1643772901914,
+    "value" : "29.9"
+  },
+  "MusXEExhErcAq00hnic" : {
+    "timeStamp" : 1643773523201,
+    "value" : "29.5"
+  },
+  "MusZY72LXzaOMd_4Otl" : {
+    "timeStamp" : 1643774129486,
+    "value" : "29.5"
+  },
+  "Musanwl__o9jt2C7c9c" : {
+    "timeStamp" : 1643774709705,
+    "value" : "29.6"
+  },
+  "Musd9R0b8a8hDZC6wi0" : {
+    "timeStamp" : 1643775337125,
+    "value" : "29.5"
+  },
+  "MusfMxoC0aymm70iFDk" : {
+    "timeStamp" : 1643775910913,
+    "value" : "29"
+  },
+  "MushixkwGSoGBvA5K7" : {
+    "timeStamp" : 1643776508812,
+    "value" : "28.8"
+  },
+  "MusjzFGBQWI8alyLbUe" : {
+    "timeStamp" : 1643777116303,
+    "value" : "29.4"
+  },
+  "MusmG_sIar53uoEQddy" : {
+    "timeStamp" : 1643777695651,
+    "value" : "28.8"
+  }
+},
+"humidsensor2" : {
+  "MuoP7kbWMBsA8xkhA_b" : {
+    "timeStamp" : 1643704277714,
+    "value" : "37.3"
+  },
+  "MuoTfNaJCNHeEhI0FMY" : {
+    "timeStamp" : 1643705455529,
+    "value" : "37.3"
+  },
+  "MuoVyunx2EJmMKG5d1" : {
+    "timeStamp" : 1643706065186,
+    "value" : "37.3"
+  },
+  "MuoYJlPr_iDHwbo08Lc" : {
+    "timeStamp" : 1643706675881,
+    "value" : "37.3"
+  },
+  "Muo_WpZCeF1eGI0z6W1" : {
+    "timeStamp" : 1643707245045,
+    "value" : "37.3"
+  },
+  "MuoboyibCaGgKiufKo" : {
+    "timeStamp" : 1643707874891,
+    "value" : "37.3"
+  },
+  "Muoe7kYJOR1VMO6xqWv" : {
+    "timeStamp" : 1643708457429,
+    "value" : "37.3"
+  },
+  "MuogOQvBYjw_GKLCq5D" : {
+    "timeStamp" : 1643709048459,
+    "value" : "37.3"
+  },
+  "Muoij9jk3JdqJra8k8G" : {
+    "timeStamp" : 1643709667132,
+    "value" : "37.3"
+  },
+  "MuokuTMqljXlu_BcdE" : {
+    "timeStamp" : 1643710245785,
+    "value" : "37.3"
+  },
+  "MuonImq5t1w6CF6gKTl" : {
+    "timeStamp" : 1643710866832,
+    "value" : "37.3"
+  },
+  "MuopeLphIP_iow6z0fI" : {
+    "timeStamp" : 1643711484639,
+    "value" : "37.3"
+  },
+  "MuoroJULA921zVqftlt" : {
+    "timeStamp" : 1643712055992,
+    "value" : "37.3"
+  },
+  "Muou9Vze2sQyOocNp9" : {
+    "timeStamp" : 1643712672619,
+    "value" : "37.3"
+  },
+  "MuowTfni1RVnXmQWuSv" : {
+    "timeStamp" : 1643713262134,
+    "value" : "37.3"
+  },
+  "MuoyjqQUqmUjsL5C4A" : {
+    "timeStamp" : 1643713862932,
+    "value" : "37.3"
+  },
+  "Mup02Fm76aUF8ulQ3Av" : {
+    "timeStamp" : 1643714459435,
+    "value" : "37.3"
+  },
+  "Mup2PBAg8wcTeACpJmA" : {
+    "timeStamp" : 1643715077218,
+    "value" : "37.3"
+  },
+  "Mup4faRUmJjoKBnrUK" : {
+    "timeStamp" : 1643715686334,
+    "value" : "37.3"
+  },
+  "Mup6wAY1jPNcpm1eKza" : {
+    "timeStamp" : 1643716281037,
+    "value" : "37.3"
+  },
+  "Mup97cb6lX_YWnOcb" : {
+    "timeStamp" : 1643716843597,
+    "value" : "37.3"
+  },
+  "MupBXPnEIaSZhY6gkPk" : {
+    "timeStamp" : 1643717477497,
+    "value" : "37.3"
+  },
+  "MupDmhAEukjpNh0BOFI" : {
+    "timeStamp" : 1643718065441,
+    "value" : "37.3"
+  },
+  "MupG6_KysfnIAvcpBJi" : {
+    "timeStamp" : 1643718672496,
+    "value" : "37.3"
+  },
+  "MupIQ9bLulG4IlU3XMR" : {
+    "timeStamp" : 1643719292833,
+    "value" : "37.3"
+  },
+  "MupK_JnWc6FLJ14eEvX" : {
+    "timeStamp" : 1643719846991,
+    "value" : "37.3"
+  },
+  "MupMvOUZY8A6o7MDEk" : {
+    "timeStamp" : 1643720484261,
+    "value" : "37.3"
+  },
+  "MupPFLPdtYo6o8KxVTZ" : {
+    "timeStamp" : 1643721068844,
+    "value" : "37.3"
+  },
+  "MupRVGLWYNARIPTlBjc" : {
+    "timeStamp" : 1643721658343,
+    "value" : "37.3"
+  },
+  "MupTkdzzICrnjbjEgIA" : {
+    "timeStamp" : 1643722255097,
+    "value" : "37.3"
+  },
+  "MupWBbGmygWQz7by5sM" : {
+    "timeStamp" : 1643722887055,
+    "value" : "37.3"
+  },
+  "MupYMwPkCTMW3mJdwTR" : {
+    "timeStamp" : 1643723458265,
+    "value" : "37.3"
+  },
+  "Mup_gmyKrwP55gaVrMx" : {
+    "timeStamp" : 1643724098053,
+    "value" : "37.3"
+  },
+  "Mupcji6E4mEu_JQgk0" : {
+    "timeStamp" : 1643724682031,
+    "value" : "37.3"
+  },
+  "MupeIZbY6oQPuxT_MQc" : {
+    "timeStamp" : 1643725286844,
+    "value" : "37.3"
+  },
+  "MupgZ0u6Y2WnO07255z" : {
+    "timeStamp" : 1643725870531,
+    "value" : "37.3"
+  },
+  "MupiseRXxqR1n66wxGu" : {
+    "timeStamp" : 1643726488327,
+    "value" : "37.3"
+  },
+  "Mupl8YpZMH6JvZwMyAL" : {
+    "timeStamp" : 1643727068242,
+    "value" : "37.3"
+  },
+  "MupnPqIevgU03rgqpIU" : {
+    "timeStamp" : 1643727672440,
+    "value" : "37.3"
+  },
+  "MuppiKMnE9CNOB2zh1x" : {
+    "timeStamp" : 1643728273449,
+    "value" : "37.3"
+  },
+  "Mups0ug0W6WHEDGX2TH" : {
+    "timeStamp" : 1643728879947,
+    "value" : "37.3"
+  },
+  "MupuK4TAIJK7pdsXo2" : {
+    "timeStamp" : 1643729480358,
+    "value" : "37.3"
+  },
+  "MupwitBBe5Yhhicr3J3" : {
+    "timeStamp" : 1643730114859,
+    "value" : "37.3"
+  },
+  "MupyoPVwyBPO3YrozNV" : {
+    "timeStamp" : 1643730651890,
+    "value" : "37.3"
+  },
+  "Muq0BsGZlz19LVZIjhm" : {
+    "timeStamp" : 1643731301148,
+    "value" : "37.3"
+  },
+  "Muq18ud2fHBax9oz4O2" : {
+    "timeStamp" : 1643731532186,
+    "value" : "37.3"
+  },
+  "Muq3QZQCbepqVfk0nWP" : {
+    "timeStamp" : 1643732147395,
+    "value" : "37.3"
+  },
+  "Muq5gSqeqPBUqhX3r2P" : {
+    "timeStamp" : 1643732730058,
+    "value" : "37.3"
+  },
+  "Muq80c1dV9hwdJMorB" : {
+    "timeStamp" : 1643733354718,
+    "value" : "37.3"
+  },
+  "MuqAL8Pdgkbb3Hj5Dh2" : {
+    "timeStamp" : 1643733943332,
+    "value" : "37.3"
+  },
+  "MuqCgfmIvoCrDm4oDOL" : {
+    "timeStamp" : 1643734558615,
+    "value" : "37.3"
+  },
+  "MuqEmJu0OpeiU6Evq4" : {
+    "timeStamp" : 1643735126584,
+    "value" : "37.3"
+  },
+  "MuqH6F83WQy6k3p2XFl" : {
+    "timeStamp" : 1643735714346,
+    "value" : "37.3"
+  },
+  "MuqJObLJImRfWOF0dd1" : {
+    "timeStamp" : 1643736313724,
+    "value" : "37.3"
+  },
+  "MuqLa9fmJemLVgFw9n" : {
+    "timeStamp" : 1643736906585,
+    "value" : "37.3"
+  },
+  "MuqNz3aIDu2tZ116Gxj" : {
+    "timeStamp" : 1643737523882,
+    "value" : "37.3"
+  },
+  "MuqQFTqXdglen2jaKQU" : {
+    "timeStamp" : 1643738127149,
+    "value" : "37.3"
+  },
+  "MuqSXlCd2JRYVHPUTkU" : {
+    "timeStamp" : 1643738720840,
+    "value" : "37.3"
+  },
+  "MuqUjpKVJ5BEgdWuYfk" : {
+    "timeStamp" : 1643739287992,
+    "value" : "37.3"
+  },
+  "MuqX5ZBaxYx2NZZ0YOw" : {
+    "timeStamp" : 1643739910358,
+    "value" : "37.3"
+  },
+  "MuqZNhKTWKntoZFl9ih" : {
+    "timeStamp" : 1643740504968,
+    "value" : "37.3"
+  },
+  "Muqah0VAqBsGhAYc3Ut" : {
+    "timeStamp" : 1643741126911,
+    "value" : "34.7"
+  },
+  "MuqfHNXlKS_QyEMP26q" : {
+    "timeStamp" : 1643742329587,
+    "value" : "35.4"
+  },
+  "Muqh_Dy90J97ARiYel3" : {
+    "timeStamp" : 1643742922952,
+    "value" : "34.9"
+  },
+  "MuqjtmlNXt4qEBYKiiZ" : {
+    "timeStamp" : 1643743542810,
+    "value" : "37"
+  },
+  "Muqm6GT28WyYa74i0k7" : {
+    "timeStamp" : 1643744100837,
+    "value" : "38.1"
+  },
+  "MuqoRj4FolLwt8DAEYO" : {
+    "timeStamp" : 1643744718768,
+    "value" : "37.6"
+  },
+  "MuqqhqapPK3pupTwlFq" : {
+    "timeStamp" : 1643745332422,
+    "value" : "36.1"
+  },
+  "MuqthsjxNK67F4zZa" : {
+    "timeStamp" : 1643745905890,
+    "value" : "35.2"
+  },
+  "MuqvJ4pjNHToavzzxu0" : {
+    "timeStamp" : 1643746516363,
+    "value" : "34.5"
+  },
+  "Muqxaxpc_kmwULcnTQ0" : {
+    "timeStamp" : 1643747131309,
+    "value" : "34.1"
+  },
+  "MuqztK1kLRbj5imJrTs" : {
+    "timeStamp" : 1643747718266,
+    "value" : "33.2"
+  },
+  "Mur1AUhmiGyQL6T3c1K" : {
+    "timeStamp" : 1643748312369,
+    "value" : "32.6"
+  },
+  "Mur3QpDLqonaX9GWPr4" : {
+    "timeStamp" : 1643748921023,
+    "value" : "32.1"
+  },
+  "Mur5lMX8rkRgWvlBUM1" : {
+    "timeStamp" : 1643749514296,
+    "value" : "30.4"
+  },
+  "Mur82ESUjvvFFmNbMA8" : {
+    "timeStamp" : 1643750115882,
+    "value" : "30.3"
+  },
+  "MurAHlPxu4AscF_tJ8O" : {
+    "timeStamp" : 1643750711603,
+    "value" : "29.7"
+  },
+  "MurCfqG6m6U5cMAQP36" : {
+    "timeStamp" : 1643751335868,
+    "value" : "30.4"
+  },
+  "MurEtgQQny0FWPtXNwh" : {
+    "timeStamp" : 1643751920671,
+    "value" : "30"
+  },
+  "MurHAmOCDLo41GYfM3" : {
+    "timeStamp" : 1643752514087,
+    "value" : "29.8"
+  },
+  "MurJOHdIUB34J0TwoOB" : {
+    "timeStamp" : 1643753105886,
+    "value" : "29.5"
+  },
+  "MurLkKptxpKGBhLF73" : {
+    "timeStamp" : 1643753705949,
+    "value" : "29.2"
+  },
+  "MurO2Yi9aZ1XpG7Atlx" : {
+    "timeStamp" : 1643754308465,
+    "value" : "29.5"
+  },
+  "MurQKlWKnfkB2DqKxAL" : {
+    "timeStamp" : 1643754919425,
+    "value" : "29.4"
+  },
+  "MurSdWl705_dXVSAuLi" : {
+    "timeStamp" : 1643755510479,
+    "value" : "29.3"
+  },
+  "MurUvoG7tgymdTj2PBo" : {
+    "timeStamp" : 1643756122566,
+    "value" : "29.2"
+  },
+  "MurXAI5mZHVqLSOszE3" : {
+    "timeStamp" : 1643756700566,
+    "value" : "28.8"
+  },
+  "MurZUunIEfwfiBZFW3" : {
+    "timeStamp" : 1643757316563,
+    "value" : "28.6"
+  },
+  "MuramkTGm9w_4V3JRjq" : {
+    "timeStamp" : 1643757918273,
+    "value" : "28.4"
+  },
+  "Murd3qT5cjRIE4KjD8K" : {
+    "timeStamp" : 1643758505877,
+    "value" : "28.7"
+  },
+  "MurfNiXa7U0ZdcIgJ9D" : {
+    "timeStamp" : 1643759137331,
+    "value" : "28.7"
+  },
+  "MurhcoPVVHRUCQXgA2e" : {
+    "timeStamp" : 1643759722819,
+    "value" : "28.8"
+  },
+  "Murk34aCsOfUoyNesV" : {
+    "timeStamp" : 1643760324293,
+    "value" : "28.3"
+  },
+  "MurmFxWH6N2G61Zj2f3" : {
+    "timeStamp" : 1643760931528,
+    "value" : "28.4"
+  },
+  "MuroZIC231xUFuPgoep" : {
+    "timeStamp" : 1643761528476,
+    "value" : "28.9"
+  },
+  "MurqrF2mZ7SrL4qQeA" : {
+    "timeStamp" : 1643762127078,
+    "value" : "28.9"
+  },
+  "Murt7wtayXuchbBSb2" : {
+    "timeStamp" : 1643762728186,
+    "value" : "28.8"
+  },
+  "MurvRNpEHD4d10991a" : {
+    "timeStamp" : 1643763341362,
+    "value" : "29"
+  },
+  "MurxkNhx9RkIJx1mYxg" : {
+    "timeStamp" : 1643763947806,
+    "value" : "29.1"
+  },
+  "MurzzFSNGZfEeFxFyhJ" : {
+    "timeStamp" : 1643764541819,
+    "value" : "29.3"
+  },
+  "Mus1IZdUpGgNtMAtiju" : {
+    "timeStamp" : 1643765125097,
+    "value" : "29.5"
+  },
+  "Mus3_Q1ZjdlmmxxPxt" : {
+    "timeStamp" : 1643765737547,
+    "value" : "28.9"
+  },
+  "Mus5oYxP4RD6uMPI0Nh" : {
+    "timeStamp" : 1643766303577,
+    "value" : "29.2"
+  },
+  "Mus856ZNP55mmsp1yx" : {
+    "timeStamp" : 1643766910379,
+    "value" : "29.2"
+  },
+  "MusAK30CKPfkfJEc61w" : {
+    "timeStamp" : 1643767490804,
+    "value" : "28.7"
+  },
+  "MusCiLyL3Sve5w8_AbW" : {
+    "timeStamp" : 1643768120699,
+    "value" : "28.9"
+  },
+  "MusEzNBhJcN6jE1hMIg" : {
+    "timeStamp" : 1643768719374,
+    "value" : "28.8"
+  },
+  "MusHFOSmJdnF8uLFfQN" : {
+    "timeStamp" : 1643769303868,
+    "value" : "28.7"
+  },
+  "MusJYqw4sbI_VfvXor" : {
+    "timeStamp" : 1643769921667,
+    "value" : "29.2"
+  },
+  "MusLr8WKknKDBREDC4h" : {
+    "timeStamp" : 1643770513779,
+    "value" : "29.1"
+  },
+  "MusO6SSktxlgDBDxXg" : {
+    "timeStamp" : 1643771099585,
+    "value" : "29.2"
+  },
+  "MusQPQhxgW39hi0PBZi" : {
+    "timeStamp" : 1643771713974,
+    "value" : "28.9"
+  },
+  "MusSjBxGMrqChgNeJ" : {
+    "timeStamp" : 1643772325568,
+    "value" : "29.2"
+  },
+  "MusUymctZC_u5fJri6F" : {
+    "timeStamp" : 1643772901941,
+    "value" : "28.4"
+  },
+  "MusXIXxaHbJQMTvwAlq" : {
+    "timeStamp" : 1643773523312,
+    "value" : "28.7"
+  },
+  "MusZUhGN8J9X69ZrjBL" : {
+    "timeStamp" : 1643774093797,
+    "value" : "29"
+  },
+  "Musaptlcw5jZ3VwyQ4" : {
+    "timeStamp" : 1643774709753,
+    "value" : "28.5"
+  },
+  "MusdCO5oy32GZrplS5" : {
+    "timeStamp" : 1643775337195,
+    "value" : "28.5"
+  },
+  "MusfP6KVaOnRM8KM7PM" : {
+    "timeStamp" : 1643775910978,
+    "value" : "28.4"
+  },
+  "MushcpiAkonEA2whay" : {
+    "timeStamp" : 1643776483094,
+    "value" : "28.3"
+  },
+  "Musk0QJEonu0PDr3dxd" : {
+    "timeStamp" : 1643777116363,
+    "value" : "28.4"
+  },
+  "MusmCHsRbv5heZxiVjC" : {
+    "timeStamp" : 1643777695588,
+    "value" : "28.1"
+  }
+}

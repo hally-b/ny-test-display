@@ -68,9 +68,14 @@
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the humidity levels read by this sensor in grams per Kg of air."></span></a>
           </div></li>
+          <li id="pm25">PM<sub>2.5</sub>: _______
+          <div class="info">
+            <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
+              data-original-title="The PM 2.5 levels show amounts of potentially harmful pollutants in your air."></span></a>
+          </div></li>
         </ul>
-          <p>Click the button below to see an interpretation of your readings based on sensor information, user feedback,
-            and outdoor weather conditions.</p>
+          <p>Click the button below to see an interpretation of your readings based on sensor/user feedback
+            and weather conditions.</p>
           <button id="recs">See Recommendations</button>
           <div id="myModal" class="modal">
             <div class="modal-content">
@@ -111,7 +116,7 @@
       //for json parse
       var dat;
       var str;
-      fetch('test-data.json')
+      fetch('co2-data.json')
       .then(function(get) {
         return get.json();
       })
@@ -144,15 +149,13 @@
       function parseJSON(data) {
         var timeslot = timepicker.getValue();
         console.log(convertTimestamp(timeslot));
-        var test = data.eb04cfa99e97dcd162qfc0_co2_value.MuoKPcei1U6DEkmuBhX.timeStamp;
+        var test = data.co2.MuoKPcei1U6DEkmuBhX.timeStamp;
         console.log(cleanTimestamp(test));
+
+        //find the entry with the selected timestamp
         function search(data, timeslot) {
           var found;
-          found = $.map(data, function(entry) {
-            //var match = entry.name.toUpperCase().indexOf(name) !== -1;
-            return match ? entry : null;
-          });
-          return found;
+          for()
         }
         console.log(search(data,timeslot));
         // var div = document.createElement('div');
