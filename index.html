@@ -36,13 +36,13 @@
         <h1>Climate Interface</h1>
         <img id="fplan" src="/images/fplan-actual.jpg" alt="floorplan" usemap="#flrplan">
         <map name="flrplan">
-          <area shape="circle" coords="172,249,31" alt="sense1" onclick="testFun()">
-          <area shape="circle" coords="215,357,31" alt="sense2" onclick="testFun()">
-          <area shape="circle" coords="238,435,31" alt="sense3" onclick="testFun()">
-          <area shape="circle" coords="144,511,31" alt="sense4" onclick="testFun()">
-          <area shape="circle" coords="351,249,31" alt="sense5" onclick="testFun()">
-          <area shape="circle" coords="784,347,31" alt="sense6" onclick="testFun()">
-          <area shape="circle" coords="742,425,31" alt="sense7" onclick="testFun()">
+          <area shape="circle" coords="172,249,31" alt="sense1" onclick="jsonSearch(1)">
+          <area shape="circle" coords="215,357,31" alt="sense2" onclick="search(2)">
+          <area shape="circle" coords="238,435,31" alt="sense3" onclick="search(3)">
+          <area shape="circle" coords="144,511,31" alt="sense4" onclick="search(4)">
+          <area shape="circle" coords="351,249,31" alt="sense5" onclick="search(5)">
+          <area shape="circle" coords="784,347,31" alt="sense6" onclick="search(6)">
+          <area shape="circle" coords="742,425,31" alt="sense7" onclick="search(7)">
         </map>
         <p>Select Floorplan Climate View:</p>
         <div id="climate-button">
@@ -53,29 +53,28 @@
         <div id="info-box1">
           <p>Sensor Information:</p>
           <ul>
-          <li id="co2">CO2: _______
+          <li id="co2"><p id='co2label'>CO2: ___</p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the CO2 levels read by this sensor in parts per million."></span></a>
           </div></li>
-          <li id="temp">Temperature: _______
+          <li id="temp"><p id='templabel'>Temperature: ___ </p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the temperature levels read by this sensor in degrees Celcius."></span></a>
           </div></li>
-          <li id="hum">Humidity: _______
+          <li id="hum"><p id='humlabel'>Humidity: ___ </p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the humidity levels read by this sensor in grams per Kg of air."></span></a>
           </div></li>
-          <li id="pm25">PM<sub>2.5</sub>: _______
+          <li id="pm25"><p id='pmlabel'>PM<sub>2.5</sub>: ___</p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="The PM 2.5 levels show amounts of potentially harmful pollutants in your air."></span></a>
           </div></li>
         </ul>
-          <p>Click the button below to see an interpretation of your readings based on sensor/user feedback
-            and weather conditions.</p>
+          <p>Click below for an interpretation of your readings.</p>
           <button id="recs">See Recommendations</button>
           <div id="myModal" class="modal">
             <div class="modal-content">
@@ -117,23 +116,61 @@
       }
 
       //for json parse
-        var dat;
-        var str;
-        var filename = 'co2-data.json';
-        fetch(filename)
+        var datco2,dattemp,dathum,datpm;
+        var str1,str2,str3,str4;
+        var f1 = 'co2-data.json';
+        var f2 = 'temp-data.json';
+        var f3 = 'humid-data.json';
+        var f4 = 'pm25-data.json';
+
+        //fetch for co2
+        fetch(f1)
         .then(function(get) {
           return get.json();
         })
         .then(function(data) {
-          dat = data;
-          str = JSON.stringify(data);
-          return parseJSON(data);
+          datco2 = data;
+          //return parseJSON(data);
         })
         .catch(function (err) {
           console.log(err);
-          alert("there was an error fetching json data");
+        });
+        //fetch for temp
+        fetch(f2)
+        .then(function(get) {
+          return get.json();
+        })
+        .then(function(data) {
+          dattemp = data;
+          //return parseJSON(data);
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+        //fetch for humidity
+        fetch(f3)
+        .then(function(get) {
+          return get.json();
+        })
+        .then(function(data) {
+          dathum = data;
+          //return parseJSON(data);
+        })
+        .catch(function (err) {
+          console.log(err);
         });
 
+        fetch(f4)
+        .then(function(get) {
+          return get.json();
+        })
+        .then(function(data) {
+          datpm = data;
+          //return parseJSON(data);
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
 
       //get timstamp format from the time picker
       function convertTimestamp(time) {
@@ -150,19 +187,14 @@
         return tsclean;
       }
 
-      function parseJSON(data) {
+      function getVals(num) {
         var timeslot = timepicker.getValue();
-        console.log(convertTimestamp(timeslot));
-        var test = data.co2sensor1.MuoKPcei1U6DEkmuBhX.timeStamp;
+        //console.log(convertTimestamp(timeslot));
+        var test = datco2.co2sensor1.MuoKPcei1U6DEkmuBhX.timeStamp;
         console.log(test);
-        console.log(cleanTimestamp(test));
+        //console.log(cleanTimestamp(test));
 
         //find the entry with the selected timestamp
-        function search(filename,timeslot,num) {
-          var found;
-          //for()
-        }
-        console.log(search(data,timeslot));
         // var div = document.createElement('div');
         // var newElem = "";
         // for(var j = 0; j < data.bands.length; j++) {
@@ -175,6 +207,40 @@
         // }
         // div.innerHTML = newElem;
         // b.appendChild(div);
+      }
+
+      function jsonSearch(num) {
+        //co2 data
+        var co2name = "co2sensor" + num.toString();
+        var timeslot = convertTimestamp(timepicker.getValue());
+        console.log(timeslot);
+        for (var key in datco2[co2name]) {
+          //console.log(cleanTimestamp(datco2[co2name][key].timeStamp));
+          if(timeslot == cleanTimestamp(datco2[co2name][key].timeStamp)) {
+            document.getElementById('co2label').innerHTML = 'CO2: <u>'+datco2[co2name][key].value+'</u>';
+          }
+        }
+        //temp data
+        var tmpname = "tempsensor" + num.toString();
+        for (var key in dattemp[tmpname]) {
+          if(timeslot == cleanTimestamp(dattemp[tmpname][key].timeStamp)) {
+            document.getElementById('templabel').innerHTML = 'Temperature: <u>'+dattemp[tmpname][key].value+'</u>';
+          }
+        }
+        //humidity data
+        var humname = "humidsensor" + num.toString();
+        for (var key in dathum[humname]) {
+          if(timeslot == cleanTimestamp(dathum[humname][key].timeStamp)) {
+            document.getElementById('humlabel').innerHTML = 'Humidity: <u>'+dathum[humname][key].value+'</u>';
+          }
+        }
+        //pm2.5 data
+        var pmname = "pm25sensor" + num.toString();
+        for (var key in datpm[pmname]) {
+          if(timeslot == cleanTimestamp(datpm[pmname][key].timeStamp)) {
+            document.getElementById('pmlabel').innerHTML = 'PM<sub>2.5</sub>: <u>'+datpm[pmname][key].value+'</u>';
+          }
+        }
       }
     </script>
 
