@@ -22142,7 +22142,7 @@ function config(newCfg) {
 			{ emitCfg(newCfg.onemit); }
 	}
 
-	
+
 }
 
 function bindEv(el, type, fn) {
@@ -22241,7 +22241,7 @@ function patchAttrs(vnode, donor, initial) {
 	var oattrs = donor.attrs || emptyObj;
 
 	if (nattrs === oattrs) {
-		
+
 	}
 	else {
 		for (var key in nattrs) {
@@ -22972,7 +22972,7 @@ function updateSync(newData, newParent, newIdx, withDOM) {
 			fireHook(vm.hooks, "willUpdate", vm, newData);
 			vm.data = newData;
 
-			
+
 		}
 	}
 
@@ -26803,7 +26803,7 @@ var Timepicker = /** @class */ (function (_super) {
         var mSlider = (this._minutesSlider = new ts_slider_1.Slider(null, {
             min: 0,
             max: 59,
-            step: 1,
+            step: 10,
             tooltip: false,
             labelPosition: "top",
             label: en_1.default.minutes,
@@ -30743,7 +30743,7 @@ function addInGroups(groups, item) {
 var Navbar = /** @class */ (function (_super) {
     __extends(Navbar, _super);
     function Navbar(element, config) {
-        var _this = 
+        var _this =
         // super(element, extend({}, config));
         _super.call(this, element, config) || this;
         _this._isContextMenu = false;

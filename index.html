@@ -80,7 +80,9 @@
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>You should replace the window sealant to better insulate the room, because blah blah blah</p>
+              <p>Based on the data read by the sensors, the window sealant should be replaced. Additionally,
+              the room should be better cooled at noon on most days, since user reports of feeling warm was
+              higher at this time.</p>
             </div>
           </div>
         </div>
@@ -101,6 +103,7 @@
       //for demo purposes, we will use a constant date (one day) 02-01-22
       const datestr = '2022-02-01';
       const [year,month,day] = datestr.split('-');
+
       //for slider
       var timepicker = new dhx.Timepicker("timepicker_container", {
         css: "dhx_timepicker--bordered bg-grey"
@@ -114,22 +117,23 @@
       }
 
       //for json parse
-      var dat;
-      var str;
-      fetch('co2-data.json')
-      .then(function(get) {
-        return get.json();
-      })
-      .then(function(data) {
-        dat = data;
-        str = JSON.stringify(data);
-        //document.getElementById('serial').innerHTML = str;
-        return parseJSON(data);
-      })
-      .catch(function (err) {
-        console.log(err);
-        alert("there was an error fetching json data");
-      });
+        var dat;
+        var str;
+        var filename = 'co2-data.json';
+        fetch(filename)
+        .then(function(get) {
+          return get.json();
+        })
+        .then(function(data) {
+          dat = data;
+          str = JSON.stringify(data);
+          return parseJSON(data);
+        })
+        .catch(function (err) {
+          console.log(err);
+          alert("there was an error fetching json data");
+        });
+
 
       //get timstamp format from the time picker
       function convertTimestamp(time) {
@@ -149,13 +153,14 @@
       function parseJSON(data) {
         var timeslot = timepicker.getValue();
         console.log(convertTimestamp(timeslot));
-        var test = data.co2.MuoKPcei1U6DEkmuBhX.timeStamp;
+        var test = data.co2sensor1.MuoKPcei1U6DEkmuBhX.timeStamp;
+        console.log(test);
         console.log(cleanTimestamp(test));
 
         //find the entry with the selected timestamp
-        function search(data, timeslot) {
+        function search(filename,timeslot,num) {
           var found;
-          for()
+          //for()
         }
         console.log(search(data,timeslot));
         // var div = document.createElement('div');
