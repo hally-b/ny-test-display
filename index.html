@@ -37,12 +37,12 @@
         <img id="fplan" src="/images/fplan-actual.jpg" alt="floorplan" usemap="#flrplan">
         <map name="flrplan">
           <area shape="circle" coords="172,249,31" alt="sense1" onclick="jsonSearch(1)">
-          <area shape="circle" coords="215,357,31" alt="sense2" onclick="search(2)">
-          <area shape="circle" coords="238,435,31" alt="sense3" onclick="search(3)">
-          <area shape="circle" coords="144,511,31" alt="sense4" onclick="search(4)">
-          <area shape="circle" coords="351,249,31" alt="sense5" onclick="search(5)">
-          <area shape="circle" coords="784,347,31" alt="sense6" onclick="search(6)">
-          <area shape="circle" coords="742,425,31" alt="sense7" onclick="search(7)">
+          <area shape="circle" coords="215,357,31" alt="sense2" onclick="jsonSearch(2)">
+          <area shape="circle" coords="238,435,31" alt="sense3" onclick="jsonSearch(3)">
+          <area shape="circle" coords="144,511,31" alt="sense4" onclick="jsonSearch(4)">
+          <area shape="circle" coords="351,249,31" alt="sense5" onclick="jsonSearch(5)">
+          <area shape="circle" coords="784,347,31" alt="sense6" onclick="jsonSearch(6)">
+          <area shape="circle" coords="742,425,31" alt="sense7" onclick="jsonSearch(7)">
         </map>
         <p>Select Floorplan Climate View:</p>
         <div id="climate-button">
@@ -187,26 +187,11 @@
         return tsclean;
       }
 
-      function getVals(num) {
-        var timeslot = timepicker.getValue();
-        //console.log(convertTimestamp(timeslot));
-        var test = datco2.co2sensor1.MuoKPcei1U6DEkmuBhX.timeStamp;
-        console.log(test);
-        //console.log(cleanTimestamp(test));
-
-        //find the entry with the selected timestamp
-        // var div = document.createElement('div');
-        // var newElem = "";
-        // for(var j = 0; j < data.bands.length; j++) {
-        //   for(var i = 0; i < data.bands[j].setlist.length; i++) {
-        //     newElem += '<b>' + data.bands[j].setlist[i].title+ '</b>' + '<br>' +
-        //     "Artist: " + data.bands[j].name + '<br>' +
-        //     "Genre: " + data.bands[j].genre + '<br>' +
-        //     "Released " + data.bands[j].setlist[i].year + '<br>' + '<br>';
-        //   }
-        // }
-        // div.innerHTML = newElem;
-        // b.appendChild(div);
+      function roundto10(data) {
+        const roundDownTo = roundTo => x => Math.floor(x / roundTo) * roundTo;
+        const roundDownTo10Minutes = roundDownTo(1000 * 60 * 10);
+        const msDown = roundDownTo10Minutes(data);
+        return msDown;
       }
 
       function jsonSearch(num) {
@@ -214,9 +199,12 @@
         var co2name = "co2sensor" + num.toString();
         var timeslot = convertTimestamp(timepicker.getValue());
         console.log(timeslot);
+        var test = datco2.co2sensor1.Mupyr6NIJmzQ4Lvggl.timeStamp;
         for (var key in datco2[co2name]) {
           //console.log(cleanTimestamp(datco2[co2name][key].timeStamp));
-          if(timeslot == cleanTimestamp(datco2[co2name][key].timeStamp)) {
+          var cleant = cleanTimestamp(datco2[co2name][key].timeStamp)
+          var roundedTime = roundto10(cleant);
+          if(timeslot == roundedTime) {
             document.getElementById('co2label').innerHTML = 'CO2: <u>'+datco2[co2name][key].value+'</u>';
           }
         }
