@@ -201,7 +201,6 @@
         console.log(timeslot);
         var test = datco2.co2sensor1.Mupyr6NIJmzQ4Lvggl.timeStamp;
         for (var key in datco2[co2name]) {
-          //console.log(cleanTimestamp(datco2[co2name][key].timeStamp));
           var cleant = cleanTimestamp(datco2[co2name][key].timeStamp)
           var roundedTime = roundto10(cleant);
           if(timeslot == roundedTime) {
