@@ -50,25 +50,25 @@
         <div id="info-box1">
           <p>Sensor Information:</p>
           <ul>
-          <li id="co2"><p id='co2label'>CO2: ___</p>
+          <li id="co2"><p id='co2label'>CO2: ___<meter id="co2-m" min="0" low="999" high="1000" max="2000" value=""></meter></p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
-              data-original-title="This value shows the CO2 levels read by this sensor in parts per million."></span></a>
+              data-original-title="This value shows the CO2 levels read by this sensor in parts per million. A value of 1000 or more is considered high."></span></a>
           </div></li>
-          <li id="temp"><p id='templabel'>Temperature: ___ </p>
+          <li id="temp"><p id='templabel'>Temp: ___ <meter id="temp-m" min="0" low="40" high="78" max="100" value=""></meter></p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
-              data-original-title="This value shows the temperature levels read by this sensor in degrees Celcius."></span></a>
+              data-original-title="This value shows the temperature levels read by this sensor in degrees Celcius. A value of 78 or more is considered high."></span></a>
           </div></li>
-          <li id="hum"><p id='humlabel'>Humidity: ___ </p>
+          <li id="hum"><p id='humlabel'>Humidity: ___ <meter id="hum-m" min="0" low="0" high="51" max="100" value=""></meter></p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
-              data-original-title="This value shows the humidity levels read by this sensor in grams per Kg of air."></span></a>
+              data-original-title="This value shows the humidity levels read by this sensor in grams per Kg of air. A value of more than 50% is considered high."></span></a>
           </div></li>
-          <li id="pm25"><p id='pmlabel'>PM<sub>2.5</sub>: ___</p>
+          <li id="pm25"><p id='pmlabel'>PM<sub>2.5</sub>: ___ <meter id="pm-m" min="0" low="0" high="35" max="40" value=""></meter></p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
-              data-original-title="The PM 2.5 levels show amounts of potentially harmful pollutants in your air."></span></a>
+              data-original-title="The PM 2.5 levels show amounts of potentially harmful pollutants in your air. A value of more than 35 micorgrams per cubic meter is considered unsafe."></span></a>
           </div></li>
         </ul>
           <p>Click below for an interpretation of your readings.</p>
@@ -81,6 +81,12 @@
               higher at this time.</p>
             </div>
           </div>
+        </div>
+        <div id="level-gauge">
+          <label class="on"><input type="color" name="toggle"><span>CO<sub>2</sub></span></label>
+          <label class="off"><input type="color" name="toggle"><span>Temp</span></label>
+          <label class="on"><input type="color" name="toggle"><span>Humidity</span></label>
+          <label class="off"><input type="color" name="toggle"><span>PM<sub>2.5</sub></span></label>
         </div>
         <div id="info-box2">
           <p>User Feedback</p>
@@ -111,6 +117,20 @@
         alert("sensor 1 click");
         console.log("clicked");
       }
+
+      //check sensor values with health standards
+      // function evalSensor(co2, temp, hum, pm) {
+      //   const co2_stand = 1000;
+      //   const temp_stand_high = 78;
+      //   const temp_stand_low = 50;
+      //   const hum_stand = 50;
+      //   const pm_stand = 35;
+      //   if(co2 != 0 && co2 > co2_stand) {
+      //     console.log('in func');
+      //     var elem = document.getElementById('co2label');
+      //     elem.style.value = 'co2';
+      //   }
+      //  }
 
       //for json parse
         var datco2,dattemp,dathum,datpm;
@@ -202,28 +222,29 @@
           var cleant = cleanTimestamp(datco2[co2name][key].timeStamp)
           var roundedTime = roundto10(cleant);
           if(timeslot == roundedTime) {
-            document.getElementById('co2label').innerHTML = 'CO2: <u>'+datco2[co2name][key].value+'</u>';
+            document.getElementById('co2label').innerHTML = 'CO2: <u>'+datco2[co2name][key].value+'</u> <meter id="co2-m" min="0" low="999" high="1000" max="2000" value='+datco2[co2name][key].value+'></meter>';
           }
+          //evalSensor(datco2[co2name][key].value,0,0,0);
         }
         //temp data
         var tmpname = "tempsensor" + num.toString();
         for (var key in dattemp[tmpname]) {
           if(timeslot == cleanTimestamp(dattemp[tmpname][key].timeStamp)) {
-            document.getElementById('templabel').innerHTML = 'Temperature: <u>'+dattemp[tmpname][key].value+'</u>';
+            document.getElementById('templabel').innerHTML = 'Temp: <u>'+dattemp[tmpname][key].value+'</u> <meter id="temp-m" min="0" low="40" high="78" max="100" value='+dattemp[tmpname][key].value+'></meter>';
           }
         }
         //humidity data
         var humname = "humidsensor" + num.toString();
         for (var key in dathum[humname]) {
           if(timeslot == cleanTimestamp(dathum[humname][key].timeStamp)) {
-            document.getElementById('humlabel').innerHTML = 'Humidity: <u>'+dathum[humname][key].value+'</u>';
+            document.getElementById('humlabel').innerHTML = 'Humidity: <u>'+dathum[humname][key].value+'</u> <meter id="hum-m" min="0" low="0" high="51" max="100" value='+dathum[humname][key].value+'></meter>';
           }
         }
         //pm2.5 data
         var pmname = "pm25sensor" + num.toString();
         for (var key in datpm[pmname]) {
           if(timeslot == cleanTimestamp(datpm[pmname][key].timeStamp)) {
-            document.getElementById('pmlabel').innerHTML = 'PM<sub>2.5</sub>: <u>'+datpm[pmname][key].value+'</u>';
+            document.getElementById('pmlabel').innerHTML = 'PM<sub>2.5</sub>: <u>'+datpm[pmname][key].value+'</u> <meter id="pm-m" min="0" low="0" high="35" max="40" value='+datpm[pmname][key].value+'></meter>';
           }
         }
       }

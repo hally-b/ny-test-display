@@ -24,6 +24,10 @@ mark {
   float: left;
 }
 
+#level-gauge {
+  font-family: 'Comfortaa', cursive;
+}
+
 #climate-button {
   font-family: 'Comfortaa', cursive;
   background-color: #FFFFFF;
@@ -90,6 +94,7 @@ mark {
   display: inline-block;
   float: right;
   margin-right: 105px;
+  margin-bottom: 10px;
 }
 
 #info-box2 {
