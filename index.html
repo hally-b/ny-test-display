@@ -50,12 +50,12 @@
         <div id="info-box1">
           <p>Sensor Information:</p>
           <ul>
-          <li id="co2"><p id='co2label'>CO2: ___<meter id="co2-m" min="0" low="999" high="1000" max="2000" value=""></meter></p>
+          <li id="co2"><p id='co2label'>CO2: ___<meter id="co2-m" min="0" low="100" high="1000" max="1700" optimum = "695" value=""></meter></p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the CO2 levels read by this sensor in parts per million. A value of 1000 or more is considered high."></span></a>
           </div></li>
-          <li id="temp"><p id='templabel'>Temp: ___ <meter id="temp-m" min="0" low="40" high="78" max="100" value=""></meter></p>
+          <li id="temp"><p id='templabel'>Temp: ___ <meter id="temp-m" min="0" low="40" high="70" max="86" value=""></meter></p>
           <div class="info">
             <a href="#"><span class="fa fa-info" data-toggle="tooltip" data-placement="right"
               data-original-title="This value shows the temperature levels read by this sensor in degrees Celcius. A value of 78 or more is considered high."></span></a>
@@ -81,12 +81,6 @@
               higher at this time.</p>
             </div>
           </div>
-        </div>
-        <div id="level-gauge">
-          <label class="on"><input type="color" name="toggle"><span>CO<sub>2</sub></span></label>
-          <label class="off"><input type="color" name="toggle"><span>Temp</span></label>
-          <label class="on"><input type="color" name="toggle"><span>Humidity</span></label>
-          <label class="off"><input type="color" name="toggle"><span>PM<sub>2.5</sub></span></label>
         </div>
         <div id="info-box2">
           <p>User Feedback</p>
@@ -222,7 +216,7 @@
           var cleant = cleanTimestamp(datco2[co2name][key].timeStamp)
           var roundedTime = roundto10(cleant);
           if(timeslot == roundedTime) {
-            document.getElementById('co2label').innerHTML = 'CO2: <u>'+datco2[co2name][key].value+'</u> <meter id="co2-m" min="0" low="999" high="1000" max="2000" value='+datco2[co2name][key].value+'></meter>';
+            document.getElementById('co2label').innerHTML = 'CO2: <u>'+datco2[co2name][key].value+'</u> <meter id="co2-m" min="0" low="100" high="1000" max="2000" value='+datco2[co2name][key].value+'></meter>';
           }
           //evalSensor(datco2[co2name][key].value,0,0,0);
         }
