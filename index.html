@@ -36,13 +36,11 @@
         <h1>Climate Interface</h1>
         <img id="fplan" src="/images/fplan-actual.jpg" alt="floorplan" usemap="#flrplan">
         <map name="flrplan">
-          <area shape="circle" coords="172,249,31" alt="sense1" onclick="jsonSearch(1)">
-          <area shape="circle" coords="215,357,31" alt="sense2" onclick="jsonSearch(2)">
-          <area shape="circle" coords="238,435,31" alt="sense3" onclick="jsonSearch(3)">
-          <area shape="circle" coords="144,511,31" alt="sense4" onclick="jsonSearch(4)">
-          <area shape="circle" coords="351,249,31" alt="sense5" onclick="jsonSearch(5)">
-          <area shape="circle" coords="784,347,31" alt="sense6" onclick="jsonSearch(6)">
-          <area shape="circle" coords="742,425,31" alt="sense7" onclick="jsonSearch(7)">
+          <area shape="circle" coords="747,295,400" alt="sense5" onclick="jsonSearch(1)">
+          <area shape="circle" coords="1212,390,300" alt="sense1" onclick="jsonSearch(2)">
+          <area shape="circle" coords="816,1012,300" alt="sense2" onclick="jsonSearch(3)">
+          <area shape="circle" coords="1146,1198,300" alt="sense3" onclick="jsonSearch(4)">
+          <area shape="circle" coords="511,1167,300" alt="sense4" onclick="jsonSearch(5)">
         </map>
         <p>Select Floorplan Climate View:</p>
         <div id="climate-button">
@@ -199,7 +197,7 @@
         var co2name = "co2sensor" + num.toString();
         var timeslot = convertTimestamp(timepicker.getValue());
         console.log(timeslot);
-        var test = datco2.co2sensor1.Mupyr6NIJmzQ4Lvggl.timeStamp;
+        var test = datco2.co2sensor1.N1qwmPB79X75eEcznD.timeStamp;
         for (var key in datco2[co2name]) {
           var cleant = cleanTimestamp(datco2[co2name][key].timeStamp)
           var roundedTime = roundto10(cleant);
